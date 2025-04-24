@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M-S-K के गेम्स</title>
+    <style>
+        /* Mobile-Friendly CSS */
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 15px;
+            background: #f8f9fa;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 25px 10px;
+            background: #2c3e50;
+            color: white;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+        .game-card {
+            background: white;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 12px;
+            box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+        }
+        .game-title {
+            color: #e74c3c;
+            margin: 0 0 10px 0;
+        }
+        .play-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background: #27ae60;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            margin-top: 15px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #7f8c8d;
+            margin-top: 30px;
+        }
+
+        /* Mobile Touch Optimization */
+        .play-btn:active {
+            transform: scale(0.98);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎮 Game zone 🎮</h1>
+            <p></p>Ye Website ek Genius(महान) Aadmi ne Bnayi h!
+            Apne Apne Ganduo Dosto ko dikhane ke liye</p>
+        </header>
+
+        <!-- 2048 Game -->
+        <div class="game-card">
+            <h2 class="game-title">2048 Puzzle</h2>
+            <p>Connect the numbers to make 2048!</p>
+            <a href="2048.html" class="play-btn">PLAY</a>
+        </div>
+
+        <!-- Tic Tac Toe Game -->
+        <div class="game-card">
+            <h2 class="game-title">TicTac Toe</h2>
+            <p>Play With Friends!</p>
+            <a href="Tic.html" class="play-btn">PLAY</a>
+        </div>
+
+        <footer>
+            <p>© 2025 MSK. All Rights Reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8639711686131039"
+     crossorigin="anonymous"></script>
+     <!-- HTML -->
+<button class="feedback-btn" onclick="openFeedback()">Please Read This</button>
+
+<div id="feedbackModal" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="closeFeedback()">&times;</span>
+    <h3>Rihan Khan Gandu hai 💬</h3>
+    <textarea id="message" placeholder="Gandu Hai h Tu Rihan ..."></textarea>
+    
+  </div>
+</div>
+
+<style>
+/* CSS */
+.feedback-btn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 12px 25px;
+  background: #E1306C; /* Instagram Color */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  width: 300px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.modal-content {
+  padding: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  resize: none;
+}
+
+.modal button {
+  background: #E1306C;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  cursor: pointer;
+  font-size: 24px;
+}
+</style>
+
+<script>
+// JavaScript
+function openFeedback() {
+  document.getElementById("feedbackModal").style.display = "block";
+}
+
+function closeFeedback() {
+  document.getElementById("feedbackModal").style.display = "none";
+}
+
+function sendToInstagram() {
+  const message = document.getElementById("message").value;
+  if (message) {
+    const instagramUrl = `https://www.instagram.com/shahib_azeez?igsh=MXZsYXh1d2J5NXN2dg==&text=${encodeURIComponent(message)}`;
+    
+    // Mobile के लिए Instagram App खोलने का प्रयास
+    window.location.href = `instagram://user?username=shahib_azeez&text=${encodeURIComponent(message)}`;
+    
+    // Fallback for Web
+    setTimeout(() => {
+      window.open(instagramUrl, '_blank');
+    }, 500);
+    
+    closeFeedback();
+  }
+}
+</script>
+<script>
+function sendToInstagram() {
+  const message = document.getElementById("message").value;
+  if (message) {
+    // Step 1: Instagram App के लिए Deep Link
+    const appUrl = `instagram://user?username=shahib_azeez&text=${encodeURIComponent(message)}`;
+    
+    // Step 2: Web URL (अगर App इंस्टॉल नहीं है)
+    const webUrl = `https://www.instagram.com/shahib_azeez/`;
+    
+    // Mobile पर App खोलने की कोशिश करें
+    window.location.href = appUrl;
+    
+    // 1 सेकंड बाद Web URL Redirect (अगर App नहीं खुला)
+    setTimeout(() => {
+      if (!document.hidden) {
+        window.location.href = webUrl;
+        alert("कृपया 'Message' बटन दबाकर अपना सुझाव भेजें 💬");
+      }
+    }, 1000);
+    
+    closeFeedback();
+  }
+}
+</script>
