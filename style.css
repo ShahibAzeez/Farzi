@@ -1,74 +1,74 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background: #111;
-  color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  min-height: 100vh;
-}
-.container {
-  max-width: 600px;
-  width: 100%;
-  background: #222;
-  border-radius: 15px;
-  padding: 25px;
-  text-align: center;
-  box-shadow: 0 0 15px rgba(0,0,0,0.5);
-}
-h1 {
-  color: #00ffd9;
-  margin-bottom: 15px;
-}
-.roast-video {
-  width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.bg-audio {
-   width: 100%;
-  border-radius: 10px;
-  margin-bottom: 15px;
-}
-.card {
-  background: #333;
-  padding: 20px;
-  border-radius: 10px;
-  min-height: 100px;
-  margin-bottom: 15px;
-}
-.typing {
-  font-size: 16px;
-  white-space: pre-wrap;
-}
-button {
-  padding: 10px 20px;
-  background: #00ffd9;
-  border: none;
-  border-radius: 8px;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
-}
-button:hover {
-  background: #00c9aa;
-}
-.socials {
-  margin-top: 15px;
-}
-.socials i {
-  font-size: 24px;
-  margin: 0 10px;
-  cursor: pointer;
-}
-.credit {
-  margin-top: 20px;
-  font-style: italic;
-  color: #aaa;
-}
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #111;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 100vh;
+  }
+  .container {
+    max-width: 600px;
+    width: 100%;
+    background: #222;
+    border-radius: 15px;
+    padding: 25px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+  h1 {
+    color: #a35d27;
+    margin-bottom: 15px;
+  }
+  .roast-video {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+  }
+  .card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 100px;
+    margin-bottom: 15px;
+  }
+  .typing {
+    font-size: 16px;
+    white-space: pre-wrap;
+  }
+  button {
+    padding: 10px 20px;
+    background: #00ffd9;
+    border: none;
+    border-radius: 8px;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  button:hover {
+    background: #00c9aa;
+  }
+  .socials {
+    margin-top: 15px;
+  }
+  .socials i {
+    font-size: 24px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  .credit {
+    margin-top: 20px;
+    font-style:italic;
+    color: #bdca92;
+    
+  }
+  .card {
+    background-color: #111212;
+    color: #a7b7f7;
+  }
