@@ -2,19 +2,43 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rihan Ka Roast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Rihan Bhai Sorry</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js" defer></script>
+  <script src="script.js" defer></script>
 </head>
 <body>
+
+  <!-- Background Roast Audio -->
+  <audio id="bg-audio" autoplay loop>
+    <source src="roast.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
   <div class="container">
-    <h1>Rihan Ka Roast</h1>
+    <h1>Rihan Ke Baare Mai</h1>
+
+    <!-- Video Section -->
+    <video src="rihan.mp4" autoplay muted loop class="roast-video"></video>
+
+    <!-- Roast Text -->
     <div class="card">
-      <p id="roast-text"></p>
+      <p id="roast-text" class="typing"></p>
     </div>
-    <div class="credit">- Tumhara dost, Shahib</div>
+
+    <!-- Share Button -->
+    <button onclick="shareRoast()">Yahe Rihan lu send kr de</button>
+
+    <!-- Social Icons for WhatsApp & Instagram -->
+    <div class="socials">
+      <i class="fab fa-whatsapp" onclick="shareToWhatsApp()"></i>
+      <i class="fab fa-instagram" onclick="shareToInstagram()"></i>
+    </div>
+
+    <div class="credit">- Tharo Developer Yarr, Shahib</div>
   </div>
 
-  <script src="script.js"></script>
 </body>
 </html>
